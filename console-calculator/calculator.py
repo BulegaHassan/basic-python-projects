@@ -9,6 +9,7 @@ class bcolors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 def pyCalculator() :
+ print(f'Welcome to our calculator:  \n')
 
  number1 = float(input('Please enter the first number : '))
 
@@ -30,7 +31,7 @@ def pyCalculator() :
  else :
   return f"{bcolors.FAIL}Invalid operation "
  
- return f'{bcolors.OKBLUE} {bcolors.BOLD}The result is {bcolors.UNDERLINE}{result}'
+ return f'{bcolors.OKBLUE} {bcolors.BOLD} {number1} {operator} {number2} = {bcolors.UNDERLINE}{result}'
 
 
 print(pyCalculator())
